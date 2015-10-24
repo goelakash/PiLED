@@ -1,0 +1,74 @@
+<html<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:20%;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    padding:10px;	 	 
+}
+#section.left {
+    float:left;
+    border:solid
+}
+#section.right {
+    float:left;
+    padding:30px;	 	 
+    border:solid;
+    height:300px;
+    width:300px;
+}
+
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1>LED on off</h1>
+</div>
+
+<div id="nav">
+<br>
+</div>
+
+<div id="section">
+
+	<div id="section" class="left">
+	<img src= {{ url_for('static', filename = 'images/meme1.jpg') }} >
+	</div>
+
+	<div id="section" class="right">
+	Buttons:
+	<br>
+	<a href="http://localhost:5000/turn_on" target="_blank">ON</a>
+	<br>
+	<a href="http://localhost:5000/turn_off" target="_blank">OFF</a>
+	</div>
+
+</div>
+
+<div id="footer">
+Copyright © W3Schools.com
+</div>
+
+</body>
+</html>
